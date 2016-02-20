@@ -12,6 +12,41 @@ body {
   width: auto;
 }
 
+.cover {
+  margin: 10px 23%;
+  padding: 5px 10px;
+  width: auto;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.cover h1 {
+  border-top: 1px solid #00284a;
+  padding-top: 15px;
+}
+
+.cover h2 {
+  border-bottom: 1px solid #00284a;
+  padding-bottom: 9px;
+  margin-bottom: 0;
+}
+img.cover-image {
+  width: 80%;
+  margin-top: 40px;
+}
+
+img.cyoa {
+  margin-top: 12px;
+  width: 80%;
+  max-width: 374px;
+}
+div.author {
+  text-transform: uppercase;
+  font-family: 'Ovo', serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+
 h1, h2 {
   font-family: 'Ovo', serif;
   font-weight: 300;
@@ -20,10 +55,13 @@ h1, h2 {
 
 h1 {
   font-size: 55px;
+  line-height: 50px;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 25px;
+  line-height: 25px;
 }
 
 p {
@@ -54,8 +92,17 @@ p:first-of-type:first-letter {
 #page-37 img {
   width: 27%;
 }
+#page-38 img {
+  width: 30%;
+}
+#page-42 img {
+  width: 30%;
+}
+em {
+  font-weight: 400;
+}
 a {
-  font-weight: 600;
+  font-weight: 400;
   color: #bf9456;
 }
 div.page-number {
