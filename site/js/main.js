@@ -6,8 +6,8 @@
   var viewPage = function(pageNumber) {
     $('body').scrollTop(0);
     $('.cover').hide();
-    $('.page').removeClass('page--current');
-    $('#page-'+pageNumber).addClass('page--current');
+    $('.page').hide();
+    $('#page-'+pageNumber).show();
   };
 
   var makeChoice = function(pageNumber, choiceKey, choiceValue) {
@@ -36,6 +36,8 @@
         );
     }
   };
+
+  $('.page').hide();
 
   var routes = {
     '/page/:pageNumber': viewPage,

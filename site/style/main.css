@@ -79,12 +79,6 @@ p:first-of-type:first-letter {
   padding-left: 3px;
   font-family: Georgia;
 }
-.page {
-  display: none;
-}
-.page--current {
-  display: block;
-}
 .page img {
   width: 40%;
   float: right;
