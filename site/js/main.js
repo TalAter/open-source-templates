@@ -1,14 +1,9 @@
-(function() {
-  var choices = {
-    type: 'issues',
-    description: 'bug-or-feature',
-    environment: 'browser-and-server'
-  };
+(function(undefined) {
+  var choices = {};
+
+  var content = {};
 
   var viewPage = function(pageNumber) {
-    if (pageNumber === 1) {
-      $('textarea').val('');
-    }
     $('body').scrollTop(0);
     $('.cover').hide();
     $('.page').removeClass('page--current');
@@ -17,13 +12,29 @@
 
   var makeChoice = function(pageNumber, choiceKey, choiceValue) {
     choices[choiceKey] = choiceValue;
+
     if (choiceKey === 'description' || choiceKey === 'environment') {
-      $.get( "templates/issue/"+choiceKey+"/"+choiceValue+".md", function(text) {
-        $("textarea").val($("textarea").val()+"\n"+text);
-      });
+      var contentKey = choiceKey+'-'+choiceValue;
+      if (content[contentKey] === undefined) {
+        $.get( "templates/issue/"+choiceKey+"/"+choiceValue+".md", function(text) {
+          content[contentKey] = text;
+          updateTextarea();
+        });
+      }
     }
 
+    updateTextarea();
+
     return viewPage(pageNumber);
+  };
+
+  var updateTextarea = function() {
+    if (choices['type'] === 'issues') {
+      $('textarea').val(
+        content['description-'+choices['description']]+"\n"+
+        content['environment-'+choices['environment']]
+        );
+    }
   };
 
   var routes = {
@@ -32,6 +43,8 @@
   };
 
   var router = Router(routes);
+
+  router.setRoute('/')
 
   router.init();
 
