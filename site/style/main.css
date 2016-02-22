@@ -104,6 +104,9 @@ a {
   font-weight: 400;
   color: #bf9456;
 }
+ul {
+  clear: left;
+}
 div.page-number {
   text-align: right;
   font-size: 15px;
