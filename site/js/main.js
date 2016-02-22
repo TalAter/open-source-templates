@@ -16,7 +16,7 @@
     if (choiceKey === 'description' || choiceKey === 'environment') {
       var contentKey = choiceKey+'-'+choiceValue;
       if (content[contentKey] === undefined) {
-        $.get( "templates/issue/"+choiceKey+"/"+choiceValue+".md", function(text) {
+        $.get( "templates/"+choices['type']+"/"+choiceKey+"/"+choiceValue+".md", function(text) {
           content[contentKey] = text;
           updateTextarea();
         });
