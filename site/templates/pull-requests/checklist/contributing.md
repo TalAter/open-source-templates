@@ -1,0 +1,1 @@
+- [ ] I have read the **CONTRIBUTING** document.
