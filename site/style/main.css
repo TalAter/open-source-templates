@@ -18,6 +18,10 @@ body {
   width: auto;
   text-align: center;
   border: 1px solid #eee;
+  color: #515151;
+}
+a.cover-link {
+  text-decoration: none;
 }
 
 .cover h1 {
@@ -33,7 +37,7 @@ body {
 }
 img.cover-image {
   width: 80%;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 img.cyoa {
