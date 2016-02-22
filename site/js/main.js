@@ -82,4 +82,10 @@
   fetchContent('change-types', 'bug-or-feature', 'pull-requests');
   fetchContent('checklist', 'intro', 'pull-requests');
 
+  $('a.file-name').click(function() {
+    var filename = choices['type'] === 'issues' ? 'ISSUE_TEMPLATE.md' : 'PULL_REQUEST_TEMPLATE.md';
+    download($('textarea').val(), filename, "text/plain");
+    return false;
+  });
+
 })()
