@@ -3,6 +3,11 @@
 
   var content = {};
 
+  var viewCover = function() {
+    $('body').scrollTop(0);
+    $('.page').hide();
+    $('.cover').show();
+  }
   var viewPage = function(pageNumber) {
     $('body').scrollTop(0);
     $('.cover').hide();
@@ -65,9 +70,8 @@
     $('textarea').val(text);
   };
 
-  $('.page').hide();
-
   var routes = {
+    '/': viewCover,
     '/page/:pageNumber': viewPage,
     '/page/:pageNumber/checklist/:choiceValue': addToChecklist,
     '/page/:pageNumber/:choiceKey/:choiceValue': makeChoice
