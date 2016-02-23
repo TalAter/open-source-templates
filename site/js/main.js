@@ -3,6 +3,8 @@
 
   var content = {};
 
+  var proMode = false;
+
   var viewCover = function() {
     $('body').scrollTop(0);
     $('.page').hide();
@@ -89,6 +91,17 @@
   $('a.file-name').click(function() {
     var filename = choices['type'] === 'issues' ? 'ISSUE_TEMPLATE.md' : 'PULL_REQUEST_TEMPLATE.md';
     download($('textarea').val(), filename, "text/plain");
+    return false;
+  });
+
+  $('#boss-key').click(function() {
+    var selector = 'p, h1, h2, img, div.author, div.page-number';
+    proMode = !proMode;
+    if (proMode) {
+      $(selector).animate({opacity: 0.07});
+    } else {
+      $(selector).animate({opacity: 1});
+    }
     return false;
   });
 
