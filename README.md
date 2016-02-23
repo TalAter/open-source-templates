@@ -4,6 +4,9 @@ A *Choose Your Own Adventure* template generator inspired by ![](http://i.imgur.
 
 Generate PULL_REQUEST_TEMPLATE.md and ISSUE_TEMPLATE.md files customized to your project, in the least efficient way possible.
 
+
+### You feel ready to get started
+
 > You are standing in an open field west of a white house.
 > 
 > [You click this link and begin your adventure](https://www.talater.com/open-source-templates/) ![](http://i.imgur.com/YSWj6a6.gif)
