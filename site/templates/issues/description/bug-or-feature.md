@@ -5,8 +5,8 @@
 <!--- If you're suggesting a change/improvement, tell us how it should work -->
 
 ## Current Behavior
-<!--- If describing a bug, tell us what happens instead of expected behavior -->
-<!--- If suggesting a change/improvement, explain difference from current behavior -->
+<!--- If describing a bug, tell us what happens instead of the expected behavior -->
+<!--- If suggesting a change/improvement, explain the difference from current behavior -->
 
 ## Possible Solution
 <!--- Not obligatory, but suggest a fix/reason for the bug, -->
@@ -22,4 +22,4 @@
 
 ## Context
 <!--- How has this issue affected you? What are you trying to accomplish? -->
-<!--- Providing context helps us solve this in the most useful way for you -->
+<!--- Providing context helps us come up with a solution that is most useful in the real world -->
