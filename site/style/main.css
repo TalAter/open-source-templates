@@ -153,6 +153,13 @@ textarea {
   color: #515151;
 }
 
+img.tweet {
+  width:  auto;
+  float: none;
+  margin-left: 0;
+  height: 22px;
+}
+
 @media (min-width: 992px) {
   .page {
     padding: 10px 20%;
