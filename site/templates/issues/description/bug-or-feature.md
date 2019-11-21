@@ -6,7 +6,7 @@
 
 ## Current Behavior
 <!--- If describing a bug, tell us what happens instead of the expected behavior -->
-<!--- If suggesting a change/improvement, explain the difference from current behavior -->
+<!--- If suggesting a change/improvement, explain the difference from expected behavior -->
 
 ## Possible Solution
 <!--- Not obligatory, but suggest a fix/reason for the bug, -->
