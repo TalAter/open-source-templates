@@ -6,7 +6,7 @@
 ## Expected Behavior
 <!--- Tell us what should happen -->
 
-## Actual Behavior
+## Current Behavior
 <!--- Tell us what happens instead -->
 
 ## Possible Fix

@@ -3,4 +3,4 @@
 * Version used:
 * Browser name and version:
 * Operating System and version (desktop or mobile):
-* Link to your project:
+* Link to your project or a reproduction:
